@@ -1,0 +1,9 @@
+[[language]]
+name = "haskell"
+scope = "source.haskell"
+injection-regex = "haskell"
+file-types = ["hs", "hs-boot"]
+roots = ["Setup.hs", "stack.yaml", "cabal.project"]
+comment-token = "--"
+language-server = { command = "haskell-language-server" , "args" = ["--lsp"]}
+indent = { tab-width = 2, unit = "  " }
